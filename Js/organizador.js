@@ -23,10 +23,12 @@ const cargarDatos = async () => {
             item.classList.add('event-item');
             item.setAttribute('data-id', evento.id);
             item.innerHTML = `
-        <span>${evento.titulo}</span>
+        <h2>${evento.titulo}</h2>
+        <div class="botones-organizador">
         <button class="btn-contacto modificar-btn" value="${evento.id}">Modificar</button>
         <button class="btn-contacto" value="${evento.id}" data-entradas>Gestion Entradas</button>
         <button class="btn-contacto" value="${evento.id}" data-delete>Eliminar</button>
+        </div>
         `;
             listaEventos.appendChild(item);
         });

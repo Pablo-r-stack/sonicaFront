@@ -613,9 +613,13 @@ textarea {
 .banda-evento {
     display: flex;
     width: 90%;
+    height: 300px;
+    /* Ajusta esta altura según tus necesidades */
     margin: 3rem auto;
     border-radius: 1rem;
+    object-fit: cover;
 }
+
 
 .contenedor-evento {
     background-color: var(--colorContainer);
@@ -752,7 +756,7 @@ textarea {
     display: block;
     margin: 10px auto;
     width: 80%;
-    color: wheat;
+    color: rgb(255, 255, 255);
 }
 
 #tipoEntrada,
@@ -770,6 +774,14 @@ textarea {
 }
 
 /* ////////// PERFIL //////////////// */
+.huno {
+    background-color: transparent !important;
+    text-align: center;
+    font-family: var(--fuenteLogoLink);
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
 .section-perfil {
     display: flex;
     flex-direction: column;
@@ -888,6 +900,7 @@ textarea {
     width: 100%;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+
 }
 
 .modal input {
@@ -908,6 +921,9 @@ textarea {
 }
 
 /* ORGANIZADOR */
+#botonsillo {
+    padding: 2rem 0;
+}
 
 .section-organizador h1 {
     font-family: var(--fuenteLogoLink);
@@ -930,12 +946,13 @@ textarea {
 .event-item {
     border: 1px solid #636060;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 2rem;
-    flex-wrap: nowrap;
     margin: 1rem;
     padding: 0 1rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .event-item span {
@@ -943,12 +960,42 @@ textarea {
     font-size: 1.5rem;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-top: 1rem;
+
+}
+
+.event-item h2 {
+    font-weight: 600;
+    margin-top: 1rem;
 }
 
 .event-item button {
     width: 200px;
     margin-left: 1rem;
     font-size: 1.4rem;
+}
+
+.contenedorTabla {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.contenedorTabla th,
+td {
+    border: 1px solid rgb(83, 81, 81);
+    padding: 5px;
+    font-weight: 600;
+}
+
+.section-organizador a,
+.btn-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto;
+
 }
 
 /* ADMINISTRADOR */
@@ -959,12 +1006,14 @@ textarea {
     padding: 2rem;
     max-width: 950px;
 }
-.titulo-listaUsuarios{
+
+.titulo-listaUsuarios {
     font-size: 2.5rem;
     text-align: center;
-    margin:  0 0 2rem;
+    margin: 0 0 2rem;
     font-family: var(--fuenteLogoLink);
 }
+
 .section-admin .admin-buttons {
     display: flex;
     gap: 20px;
@@ -1265,6 +1314,10 @@ footer ul li {
     }
 
     /* PERFIL */
+    .huno {
+        font-size: 3rem;
+    }
+
     .section-perfil {
         flex-direction: row;
         max-width: 950px;
@@ -1304,14 +1357,23 @@ footer ul li {
         font-size: 1.7rem;
     }
 
+    .contenedorTabla {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .botones-organizador {
+        display: flex;
+    }
+
     /* ADMINISTRADOR */
     .user-list .action-buttons {
         display: flex;
         flex-direction: row;
     }
-    
+
     .section-admin button {
-         max-width: 250px;
+        max-width: 250px;
         font-size: 2rem;
     }
 
@@ -1352,7 +1414,7 @@ footer ul li {
 }
 
 /* TAMAÑO PARA DESKTOP */
-@media (min-width: 1044px) {
+@media (min-width: 1024px) {
     nav label {
         display: none;
     }
@@ -1472,6 +1534,11 @@ footer ul li {
     }
 
     /* EVENTO */
+    .banda-evento {
+        height: 500px;
+        /* Ajusta esta altura según tus necesidades */
+    }
+
     .descripcion-evento {
         font-size: 1.5rem;
     }
