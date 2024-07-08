@@ -104,7 +104,8 @@ editDataForm.onsubmit = async function (event) {
     const id = mensaje.id;
     delete mensaje.id;
     const respuesta = await conexionApi.modificarDatosUsuario(mensaje, id);
-    console.log(respuesta);
+    alert(respuesta.message);
+    window.location.href='perfil.html';
     editDataModal.style.display = 'none'; // Close modal after submission
 };
 
@@ -118,11 +119,11 @@ changePasswordForm.onsubmit = async function (event) {
         mensaje[input.name] = input.value.trim();
     });
     if (mensaje.password !== mensaje.password2) {
-        console.log('Las contraseñas no coinciden');
+        alert('Las contraseñas no coinciden');
     } else {
         delete mensaje.password2;
         const respuesta = await conexionApi.modificarPassword(mensaje);
-        console.log(respuesta);
+        alert(respuesta.message);
     }
     inputs.forEach(input => input.value = '');
     changePasswordModal.style.display = 'none'; // Close modal after submission

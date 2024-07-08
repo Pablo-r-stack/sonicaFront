@@ -5,6 +5,11 @@ export const apiUrl = 'https://pablo-rvs.alwaysdata.net';
 const consultarApi = async (url, opciones = {}) => {
     const respuesta = await fetch(url, opciones);
     if (!respuesta.ok) {
+        if (respuesta.status === 401) { // Verificar si el status es 401
+            alert('Sesion expirada, por favor vuelve a iniciar sesión');
+            auth.logout();
+            throw new Error('Sesion expirada');
+        }
         throw new Error(`HTTP error! Status: ${respuesta.status}`);
     }
     return await respuesta.json();

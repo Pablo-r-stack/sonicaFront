@@ -105,6 +105,7 @@ formModificar.onsubmit = (async (e) => {
     const respuesta = await conexionApi.eventoModificar(mensaje, id);
     alert(respuesta.message);
     modal.style.display = "none";
+    window.location.href = "organizador.html";
 })
 
 
