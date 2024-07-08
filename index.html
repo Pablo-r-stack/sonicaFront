@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!-- Icon for the browser tab -->
+    <link rel="icon" href="img/logo/wepik-export-202404182339020TpB.png" type="image/png">
+    <!-- Image for sharing the link -->
+    <meta property="og:image" content="https://pablo-r-stack.github.io/sonica/img/previsualizacion.png">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Checkbox for mobile menu -->
+    <input type="checkbox" id="toggler">
+    <!-- End checkbox for mobile menu -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"> <img src="img/logo/wepik-export-202404182339020TpB.png" alt="logo">
+                    <p>Sonica</p>
+                </a>
+            </div>
+            <!-- Mobile Menu -->
+            <label for="toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <!-- End Mobile Menu -->
+            <ul class="navLinks">
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="registrar.html">Registrar</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class="shadow-banner">
+        <img class="banner" src="img/banner/banner2.jpg" alt="banner">
+        <h1 class="parrafo-banner">Últimos Shows</h1>
+    </div>
+
+    <main>
+        <!-- CARDS SECTION -->
+        <section>
+            <div class="contenedor-cartas"></div>
+        </section>
+
+        <template id="template-carta">
+            <div class="carta" data-id>
+                <img src="" alt="">
+                <div class="texto-carta">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </template>
+
+        <!-- PLAYLIST SECTION -->
+        <section class="playlist">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>2024- Todos los derechos reservados</p>
+        <ul>
+            <li><a href="/sonica/contacto">Contacto</a></li>
+            <li><a href="/sonica/acercade">Acerca de</a></li>
+            <li><a href="/sonica/soporte">Soporte</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="Js/index.js"></script>
+</body>
+
+</html>

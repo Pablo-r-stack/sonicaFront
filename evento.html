@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <!-- Icono para la pestaña del navegador -->
+    <link rel="icon" href="img/logo/wepik-export-202404182339020TpB.png" type="image/png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Checkbox menu movil -->
+    <input type="checkbox" id="toggler">
+    <!-- Fin checkbox menu movil -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"> <img src="img/logo/wepik-export-202404182339020TpB.png" alt="logo">
+                    <p>Sonica</p>
+                </a>
+            </div>
+            <!-- Menu Movil -->
+            <label for="toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <!-- Fin Menu movil -->
+            <ul class="navLinks">
+                <li><a href="acercade.html">Acerca de</a> </li>
+                <li><a href="soporte.html">Soporte</a> </li>
+                <li><a href="registrar.html">Registrar</a> </li>
+                <li><a href="login.html">Iniciar sesion</a> </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- FOTO DEL EVENTO -->
+    <img class="banda-evento" src="img/foto/cantante.png" alt="banda">
+
+    <main>
+        <section class="contenedor-evento">
+            <div class="evento-dato-compra">
+                <div class="artista">
+                    <h1 class="titulo-evento"></h1>
+                    <div class="evento">
+                        <div class="descripcion-evento">
+                            <p>Abril será un mes para recordar: la agrupación argentina de cuarteto más
+                                convocante de Argentina hará bailar el Movistar Arena al ritmo de todos
+                                los clásicos de sus más de dos décadas de éxito </p>
+                        </div>
+                        <div class="datos-evento">
+                            <ul>
+                                <li><img src="img/icons/LugarIcon.png"><label class="lugar-evento"></label></li>
+                                <li><img src="img/icons/CalendarIcon.png"><label class="fecha-evento"></label></li>
+                                <li><img src="img/icons/HoraIcon.png"><label class="hora-evento"></label></li>
+                                <li><img src="img/icons/MapaIcon.png"><label class="direccion-evento"></label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tiempo">
+                    <div class="countdown">
+                        <p id="countdown-timer">Faltan: -- días | -- horas | -- minutos | -- segundos</p>
+                    </div>
+                    <div class="bottom-section">
+                        <div class="comprar-ticket">
+                            <p id="entradas-disponibles">Entradas Agotadas</p>
+                        </div>
+
+                        <div>
+                            <button class="btn-contacto" id="btn-compra">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mapa">
+                <h2>COMO LLEGAR?</h2>
+                <iframe src="" width="400" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>COMPRA TUS ENTRADAS</h2>
+                <label for="cantidadEntradas">Cantidad de Entradas:</label>
+                <select id="cantidadEntradas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <div class="btnEntrada">
+                  <button id="comprarEntradas" class="btn-contacto">Comprar</button>  
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>2024- Todos los derechos reservados</p>
+        <ul>
+            <li><a href="/contacto.html">Contacto</a></li>
+            <li><a href="/acercade.html">Acerca de</a></li>
+            <li><a href="/soporte.html">Soporte</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="Js/evento.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador</title>
+    <!-- Icon for the browser tab -->
+    <link rel="icon" href="img/logo/wepik-export-202404182339020TpB.png" type="image/png">
+    <!-- Image for sharing the link -->
+    <meta property="og:image" content="https://pablo-r-stack.github.io/sonica/img/previsualizacion.png">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Checkbox for mobile menu -->
+    <input type="checkbox" id="toggler">
+    <!-- End checkbox for mobile menu -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"> <img src="img/logo/wepik-export-202404182339020TpB.png" alt="logo">
+                    <p>Sonica</p>
+                </a>
+            </div>
+            <!-- Mobile Menu -->
+            <label for="toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <!-- End Mobile Menu -->
+            <ul class="navLinks">
+                <li><a href="/acercade.html">Acerca de</a></li>
+                <li><a href="/soporte.html">Soporte</a></li>
+                <li><a href="/registrar.html">Registrar</a></li>
+                <li><a href="/login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class="shadow-banner">
+        <img class="banner" src="img/banner/banner2.jpg" alt="banner">
+        <h1 class="parrafo-banner">Organizador</h1>
+    </div>
+
+    <main>
+        <section class="section-organizador">
+            <h1>Tus Eventos</h1>
+            <a href="agregarEvento.html" class="btn-contacto">Cargar Nuevo Evento</a>
+            <div class="event-list">
+                <ul>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>MODIFICAR EVENTO</h2>
+            <form id="modificarEventoForm">
+                <input type="hidden" id="id" name="id" value="id" disabled>
+                <label for="titulo">Nombre:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Nombre del Evento" required>
+            
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" placeholder="Fecha del Evento" required>
+            
+                <label for="lugar">Lugar:</label>
+                <input type="text" id="lugar" name="lugar" placeholder="Lugar del Evento" required>
+            
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" placeholder="Hora del Evento" required>
+            
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Direccion del Evento" required>
+            
+                <label for="coordenadas">Mapa:</label>
+                <input type="text" id="coordenadas" name="coordenadas" placeholder="Mapa del Evento">
+            
+                <label for="imagen">Imagen:</label>
+                <input type="text" id="imagen" name="imagen" placeholder="Imagen del Evento">
+            
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Ingrese una descripcion"></textarea>
+                <button class="btn-contacto" type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+    <div id="modalEntradas" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Datos Entradas</h2>
+            <div class="contenedorTabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Precio Entrada</th>
+                            <th>Disponibles</th>
+                            <th>Vendidas</th>
+                            <th>Total Recaudado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form id="gestionEntradas">
+                <input type="hidden" id="id" name="id" value="id" disabled>
+                <label for="agregarEntradas">Cantidad Total</label>
+                <input type="number" id="agregarEntradas" name="agregarEntradas" placeholder="Agregar Número de Entradas" >
+                <button class="btn-contacto" type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>2024- Todos los derechos reservados</p>
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="Js/organizador.js"></script>
+</body>
+
+</html>

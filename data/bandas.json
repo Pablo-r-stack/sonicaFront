@@ -1,0 +1,64 @@
+{
+    "shows": [
+        {
+            "nombre": "Los Nocheros",
+            "fecha": "2024-05-25",
+            "lugar": "Cosquin-Cba",
+            "hora": "15:00",
+            "direccion": "Corrientes 857",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.3106564974896!2d-64.46945432363127!3d-31.239822387739448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d7bb8235e87b5%3A0xe7e96dc1653b468e!2sCorrientes%20857%2C%20Cosqu%C3%ADn%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1716250052756!5m2!1ses-419!2sar",
+            "imagen": "img/foto/losnoche.png",
+            "descripcion": "En mayo, la reconocida banda de folklore argentino, llenará Cosquín, Córdoba, con su música inconfundible. No te pierdas la oportunidad de disfrutar de sus clásicos en vivo."
+        },
+        {
+            "nombre": "Banda XXI",
+            "fecha": "2024-07-03",
+            "lugar": "Rio 4",
+            "hora": "22:30",
+            "direccion": "Presidente Peron 1830",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.6822511019714!2d-64.31853592356018!3d-33.14371138187046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ce000d70a7bdc1%3A0x14fb234ae3af0724!2sAv.%20Pres.%20Per%C3%B3n%20Este%201830%2C%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1716250720101!5m2!1ses-419!2sar",
+            "imagen": "img/foto/banda.jpg",
+            "descripcion": "Vuelve la banda! en Julio, llevarán su energía y ritmo de cuarteto a Río Cuarto, Córdoba. Ven a disfrutar de una noche única e inolvidable."
+        },
+        {
+            "nombre": "Jean Carlos",
+            "fecha": "2025-01-18",
+            "lugar": "Cordoba",
+            "hora": "00:00",
+            "direccion": "9 de Julio 1200",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.15477178797!2d-64.20250652362503!3d-31.40986159593736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329886b7486c9f%3A0xf51d8208dda49a76!2s9%20de%20Julio%201200%2C%20X5022%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1716250934563!5m2!1ses-419!2sar",
+            "imagen": "img/foto/jeancarlos.jpg",
+            "descripcion":  "Jean Carlos, el carismático cantante de cuarteto, hará vibrar Córdoba con su música. No te pierdas su show lleno de pasión y ritmo. Te esperamos este 18 de enero!"
+        },
+        {
+            "nombre": "La Konga",
+            "fecha": "2024-09-23",
+            "lugar": "Mendoza",
+            "hora": "23:00",
+            "direccion": "Estadio Malvinas Argentinas",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.321777897053!2d-68.8826705235698!3d-32.88965966901411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09b522bd5683%3A0x684a90ae779e7723!2sEstadio%20Malvinas%20Argentinas!5e0!3m2!1ses-419!2sar!4v1716251070805!5m2!1ses-419!2sar",
+            "imagen": "img/foto/konga.jpg",
+            "descripcion": "Septiembre será un mes para recordar: la agrupación de cuarteto más convocante de Argentina hará temblar Mendoza al ritmo de todos los clásicos de sus dos décadas de éxitos."
+        },
+        {
+            "nombre": "Las Pastillas del Abuelo",
+            "fecha": "2024-08-08",
+            "lugar": "Bs As",
+            "hora": "20:00",
+            "direccion": "Luna Park",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1641885725335!2d-58.380042208847584!3d-34.600009477170154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses-419!2sar!4v1716251130421!5m2!1ses-419!2sar",
+            "imagen": "img/foto/Las-Pastillas.jpg",
+            "descripcion": "En agosto, Las Pastillas vuelven con su original estilo a Buenos Aires. No te pierdas su espectacular show en el mítico Luna Park."
+        },
+        {
+            "nombre": "Q`Lokura",
+            "fecha": "2024-10-29",
+            "lugar": "Santa Fe",
+            "hora": "21:00",
+            "direccion": "Martín Zapata 2731",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.516976332757!2d-60.70566231224476!3d-31.619692739492304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9ddb5f04951%3A0x71520a3fdd8b1e0a!2sMart%C3%ADn%20Zapata%202731%2C%20S3002%20Santa%20Fe%20de%20la%20Vera%20Cruz%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1716251274250!5m2!1ses-419!2sar",
+            "imagen": "img/foto/qlokura.jpg",
+            "descripcion": "En octubre, Q`Lokura llevará su cuarteto contagioso a Santa Fe. Prepárate para una noche llena de música y diversión con uno de los grupos más populares del género."
+        }
+    ]
+}

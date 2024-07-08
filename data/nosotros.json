@@ -1,0 +1,36 @@
+{
+    "programadores":[
+    {
+        "nombre": "Karina",
+        "apellido": "Crognale",
+        "rol": "Programadora Full Stack",
+        "linked": "",
+        "git": "",
+        "foto": ""
+    },
+    {
+        "nombre": "Franco",
+        "apellido": "Rasia",
+        "rol": "Programador Full Stack",
+        "linked": "",
+        "git": "",
+        "foto": ""
+    },
+    {
+        "nombre": "Lautaro",
+        "apellido": "Sanchez",
+        "rol": "Programador Fullstack",
+        "linked": "",
+        "git": "",
+        "foto": ""
+    },
+    {
+        "nombre": "Pablo",
+        "apellido": "Velasco",
+        "rol": "Programador Full Stack",
+        "linked": "https://www.linkedin.com/in/pablo-r-velasco/",
+        "git": "https://github.com/Pablo-r-stack",
+        "foto": ""
+    }
+]
+}
