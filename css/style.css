@@ -74,7 +74,9 @@ nav {
     padding: 3rem;
     height: 7rem;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
+    /* Aumentar el z-index */
+    position: relative;
 }
 
 .logo a {
@@ -83,7 +85,6 @@ nav {
     text-decoration: none;
     font-size: 2rem;
     /* en figma decia 12px pero me parecio pequeño jaja CHARLABLE */
-
 }
 
 .logo img {
@@ -101,7 +102,7 @@ header {
     /* Sombra en la parte inferior */
     position: relative;
     /* Asegura que el header tenga un contexto de apilamiento */
-    z-index: 1;
+    z-index: 100;
     /* Coloca el header por encima de otros elementos si es necesario */
 }
 
@@ -136,7 +137,8 @@ header {
     height: 0;
     transition: 0.5s;
     overflow: hidden;
-    z-index: 10;
+    z-index: 999;
+    /* Asegúrate de que el z-index sea alto */
 }
 
 .navLinks li:nth-child(1) {
@@ -148,6 +150,8 @@ nav label {
     height: 30px;
     border: #D9d9d9;
     position: relative;
+    z-index: 1000;
+    /* Asegúrate de que el z-index sea alto */
 
     &:hover {
         cursor: pointer;
@@ -199,6 +203,7 @@ nav label div:nth-child(3) {
 body {
     height: 100%;
 }
+
 
 /* BANNER */
 .banner {
@@ -645,6 +650,10 @@ textarea {
 .descripcion-evento {
     font-size: 1.2rem;
     line-height: 1.5em
+}
+
+.descripcion-evento p {
+    font-size: 1.2rem;
 }
 
 .datos-evento img {
@@ -1540,6 +1549,10 @@ footer ul li {
     }
 
     .descripcion-evento {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-evento p {
         font-size: 1.5rem;
     }
 
