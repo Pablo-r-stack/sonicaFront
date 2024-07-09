@@ -1435,6 +1435,7 @@ footer ul li {
     .navLinks {
         height: auto;
         width: auto;
+        top: 0;
         flex-direction: row;
         background: none;
         position: inherit;
